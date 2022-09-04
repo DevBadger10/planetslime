@@ -16,10 +16,19 @@ func _on_StartHosting_pressed():
 		starthosting()
 
 func starthosting():
-	pass
+	print(IP.get_local_addresses())
+	var peer = NetworkedMultiplayerENet.new()
+	if $LimitPlayers.pressed == true:
+		peer.create_server(5113, 14) #14 colours.
+	if $LimitPlayers.pressed == false:
+		peer.create_server(5113, 100)
+	get_tree().network_peer = peer
+	$ConnectionID.text = "SlimeID: " + encodeIP()
+	#print(encodeIP())
 
 func stophosting():
-	pass
+	get_tree().network_peer = null
+	$ConnectionID.text = "SlimeID: Terminated"
 
 func _on_StopHosting_pressed():
 	if hosting == true:
@@ -32,14 +41,6 @@ func _on_StopHosting_pressed():
 		hosting = false
 
 func encodeIP():
-	if IP.get_local_addresses().size() == 0:
-		return "Error: IP Not Found"
-	elif IP.get_local_addresses().size() == 1:
-		if not IP.get_local_addresses()[0] == "127.0.0.1":
-			return str(IP.get_local_addresses()[0])
-		else:
-			return "Error: IP Invalid"
-	else:
-		for i in IP.get_local_addresses().size():
-			if not IP.get_local_addresses()[i] == "127.0.0.1":
-				return IP.get_local_addresses()[i]
+	for i in IP.get_local_addresses().size():
+		if IP.get_local_addresses()[i].left(2) == "10":
+			return IP.get_local_addresses()[i]
