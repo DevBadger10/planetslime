@@ -1,0 +1,349 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/White.png" type="Texture" id=1]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Red.png" type="Texture" id=2]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Yellow.png" type="Texture" id=3]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Yellow.png" type="Texture" id=4]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Purple.png" type="Texture" id=5]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Red.png" type="Texture" id=6]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Lime.png" type="Texture" id=7]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/White.png" type="Texture" id=8]
+[ext_resource path="res://Images/Slimes/Accessories/Coffee.png" type="Texture" id=9]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Sand.png" type="Texture" id=10]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Lime.png" type="Texture" id=11]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Lilac.png" type="Texture" id=12]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Orange.png" type="Texture" id=13]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Orange.png" type="Texture" id=14]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Purple.png" type="Texture" id=15]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Sand.png" type="Texture" id=16]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Lilac.png" type="Texture" id=17]
+[ext_resource path="res://Scripts/Dressup.gd" type="Script" id=18]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Brown.png" type="Texture" id=19]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Grey.png" type="Texture" id=20]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/KirbyIfHeSwallowedASlime.png" type="Texture" id=21]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/KirbyIfHeSwallowedASlime.png" type="Texture" id=22]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Green.png" type="Texture" id=23]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Green.png" type="Texture" id=24]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Black.png" type="Texture" id=25]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Black.png" type="Texture" id=26]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Grey.png" type="Texture" id=27]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Blue.png" type="Texture" id=28]
+[ext_resource path="res://Images/Slimes/Slimes/Frame One/Blue.png" type="Texture" id=29]
+[ext_resource path="res://Images/Slimes/Slimes/Frame Two/Brown.png" type="Texture" id=30]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 26 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "black",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "green",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "blue",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "brown",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "lime",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "orange",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "red",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "purple",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "white",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "yellow",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "sand",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "kirby",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "grey",
+"speed": 1.2
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "lilac",
+"speed": 1.2
+} ]
+
+[node name="Dressup" type="Node2D"]
+script = ExtResource( 18 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Black" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 544.0
+margin_right = 28.0
+margin_bottom = 564.0
+text = "Black"
+
+[node name="Blue" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 544.0
+margin_right = 118.0
+margin_bottom = 564.0
+text = "Blue"
+
+[node name="Brown" type="Button" parent="."]
+margin_left = 128.0
+margin_top = 544.0
+margin_right = 174.0
+margin_bottom = 564.0
+text = "Brown"
+
+[node name="Green" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 544.0
+margin_right = 244.0
+margin_bottom = 564.0
+text = "Green"
+
+[node name="Grey" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 544.0
+margin_right = 308.0
+margin_bottom = 564.0
+text = "Grey"
+
+[node name="Kirby" type="Button" parent="."]
+margin_left = 320.0
+margin_top = 544.0
+margin_right = 372.0
+margin_bottom = 564.0
+text = "Kirby"
+
+[node name="Lilac" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 544.0
+margin_right = 436.0
+margin_bottom = 564.0
+text = "Lilac"
+
+[node name="Lime" type="Button" parent="."]
+margin_left = 448.0
+margin_top = 544.0
+margin_right = 500.0
+margin_bottom = 564.0
+text = "Lime"
+
+[node name="Orange" type="Button" parent="."]
+margin_left = 512.0
+margin_top = 544.0
+margin_right = 564.0
+margin_bottom = 564.0
+text = "Orange"
+
+[node name="Purple" type="Button" parent="."]
+margin_left = 587.0
+margin_top = 544.0
+margin_right = 645.0
+margin_bottom = 564.0
+text = "Purple"
+
+[node name="Red" type="Button" parent="."]
+margin_left = 656.0
+margin_top = 544.0
+margin_right = 714.0
+margin_bottom = 564.0
+text = "Red"
+
+[node name="Sand" type="Button" parent="."]
+margin_left = 736.0
+margin_top = 544.0
+margin_right = 794.0
+margin_bottom = 564.0
+text = "Sand"
+
+[node name="White" type="Button" parent="."]
+margin_left = 816.0
+margin_top = 544.0
+margin_right = 874.0
+margin_bottom = 564.0
+text = "White"
+
+[node name="Yellow" type="Button" parent="."]
+margin_left = 896.0
+margin_top = 544.0
+margin_right = 954.0
+margin_bottom = 564.0
+text = "Yellow"
+
+[node name="Cake" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 512.0
+margin_right = 62.0
+margin_bottom = 532.0
+text = "Cake"
+
+[node name="Carrot" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 512.0
+margin_right = 118.0
+margin_bottom = 532.0
+text = "Carrot"
+
+[node name="Coal" type="Button" parent="."]
+margin_left = 128.0
+margin_top = 512.0
+margin_right = 180.0
+margin_bottom = 532.0
+text = "Coal"
+
+[node name="Coffee" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 512.0
+margin_right = 244.0
+margin_bottom = 532.0
+text = "Coffee"
+
+[node name="CottonBall" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 512.0
+margin_right = 308.0
+margin_bottom = 532.0
+text = "Cottonball"
+
+[node name="Glue" type="Button" parent="."]
+margin_left = 320.0
+margin_top = 512.0
+margin_right = 372.0
+margin_bottom = 532.0
+text = "Glue"
+
+[node name="Hat" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 512.0
+margin_right = 436.0
+margin_bottom = 532.0
+text = "HAT"
+
+[node name="Money" type="Button" parent="."]
+margin_left = 448.0
+margin_top = 512.0
+margin_right = 500.0
+margin_bottom = 532.0
+text = "Money"
+
+[node name="Nothing" type="Button" parent="."]
+margin_left = 512.0
+margin_top = 512.0
+margin_right = 570.0
+margin_bottom = 532.0
+text = "Nothing"
+
+[node name="Paperclip" type="Button" parent="."]
+margin_left = 587.0
+margin_top = 512.0
+margin_right = 645.0
+margin_bottom = 532.0
+text = "Paperclip"
+
+[node name="Potato" type="Button" parent="."]
+margin_left = 656.0
+margin_top = 512.0
+margin_right = 714.0
+margin_bottom = 532.0
+text = "Potato"
+
+[node name="Soup" type="Button" parent="."]
+margin_left = 736.0
+margin_top = 512.0
+margin_right = 794.0
+margin_bottom = 532.0
+text = "Soup"
+
+[node name="Starsticker" type="Button" parent="."]
+margin_left = 816.0
+margin_top = 512.0
+margin_right = 874.0
+margin_bottom = 532.0
+text = "Star sticker"
+
+[node name="Weight" type="Button" parent="."]
+margin_left = 896.0
+margin_top = 512.0
+margin_right = 954.0
+margin_bottom = 532.0
+text = "Weight"
+
+[node name="Slime" type="AnimatedSprite" parent="."]
+position = Vector2( 480, 272 )
+scale = Vector2( 46.25, 46.25 )
+frames = SubResource( 1 )
+animation = "sand"
+
+[node name="Accessory" type="Sprite" parent="."]
+position = Vector2( 480, 136 )
+scale = Vector2( 14.7813, 14.7813 )
+texture = ExtResource( 9 )
+
+[connection signal="pressed" from="Black" to="." method="_on_Black_pressed"]
+[connection signal="pressed" from="Blue" to="." method="_on_Blue_pressed"]
+[connection signal="pressed" from="Brown" to="." method="_on_Brown_pressed"]
+[connection signal="pressed" from="Green" to="." method="_on_Green_pressed"]
+[connection signal="pressed" from="Grey" to="." method="_on_Grey_pressed"]
+[connection signal="pressed" from="Kirby" to="." method="_on_Kirby_pressed"]
+[connection signal="pressed" from="Lilac" to="." method="_on_Lilac_pressed"]
+[connection signal="pressed" from="Lime" to="." method="_on_Lime_pressed"]
+[connection signal="pressed" from="Orange" to="." method="_on_Orange_pressed"]
+[connection signal="pressed" from="Purple" to="." method="_on_Purple_pressed"]
+[connection signal="pressed" from="Red" to="." method="_on_Red_pressed"]
+[connection signal="pressed" from="Sand" to="." method="_on_Sand_pressed"]
+[connection signal="pressed" from="White" to="." method="_on_White_pressed"]
+[connection signal="pressed" from="Yellow" to="." method="_on_Yellow_pressed"]
+[connection signal="pressed" from="Cake" to="." method="_on_Cake_pressed"]
+[connection signal="pressed" from="Carrot" to="." method="_on_Carrot_pressed"]
+[connection signal="pressed" from="Coal" to="." method="_on_Coal_pressed"]
+[connection signal="pressed" from="Coffee" to="." method="_on_Coffee_pressed"]
+[connection signal="pressed" from="CottonBall" to="." method="_on_CottonBall_pressed"]
+[connection signal="pressed" from="Glue" to="." method="_on_Glue_pressed"]
+[connection signal="pressed" from="Hat" to="." method="_on_Hat_pressed"]
+[connection signal="pressed" from="Money" to="." method="_on_Money_pressed"]
+[connection signal="pressed" from="Nothing" to="." method="_on_Nothing_pressed"]
+[connection signal="pressed" from="Paperclip" to="." method="_on_Paperclip_pressed"]
+[connection signal="pressed" from="Potato" to="." method="_on_Potato_pressed"]
+[connection signal="pressed" from="Soup" to="." method="_on_Soup_pressed"]
+[connection signal="pressed" from="Starsticker" to="." method="_on_Starsticker_pressed"]
+[connection signal="pressed" from="Weight" to="." method="_on_Weight_pressed"]
+[connection signal="frame_changed" from="Slime" to="." method="_on_Slime_frame_changed"]
